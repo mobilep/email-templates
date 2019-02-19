@@ -1,0 +1,23 @@
+---
+subject: {{subject}}
+userName: '{{userName}}'
+senderName: '{{senderName}'
+buttonLink: '{{buttonLink}}'
+language: en
+---
+
+<row>
+  <columns small="12">
+    <p>You've received a new private video on Mobile Practice</p>
+    {{> hrPartial }}
+    <h6>
+      <strong>
+        Video from {{ senderName }}
+      </strong>
+    </h6>
+    <br>
+    <center>
+      <button class="radius float-center" href={{buttonLink}}>View video in Mobile Practice</button>
+    </center>
+  </columns>
+</row>

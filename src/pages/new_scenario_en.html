@@ -1,0 +1,38 @@
+---
+subject: {{subject}}
+userName: '{{userName}}'
+senderName: '{{senderName}'
+buttonLink: '{{buttonLink}}'
+scenarioName: '{{scenarioName}}'
+language: en
+imgSrc: '{{imgSrc}}'
+---
+
+<row>
+  <columns>
+    <p>You've received a new scenario to practice.</p>
+    {{> hrPartial }}
+    <strong>
+      New Scenario from {{ senderName }}
+    </strong>
+  </columns>
+</row>
+
+<row>
+  <columns small="3" large="1">
+    {{> imgPartial}}
+  </columns>
+
+  <columns small="9" large="11">
+    <spacer size="5"></spacer>
+    <p>{{ scenarioName}}</p>
+  </columns>
+</row>
+
+<row>
+  <columns>
+    <center>
+      <button class="radius" href={{buttonLink}}>View Scenario in Mobile Practice</button>
+    </center>
+  </columns>
+</row>

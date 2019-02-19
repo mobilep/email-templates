@@ -1,0 +1,14 @@
+@import 'settings';
+@import 'foundation-emails';
+
+.container {
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+}
+
+.hr-partial {
+  border-top: 1px solid $light-gray;
+}
+
+
+@import 'template/template';

@@ -1,0 +1,23 @@
+---
+subject: {{subject}}
+userName: '{{userName}}'
+senderName: '{{senderName}'
+buttonLink: '{{buttonLink}}'
+language: fr
+---
+
+<row>
+  <columns small="12">
+    <p>Vous avez reçu une nouvelle vidéo</p>
+    {{> hrPartial }}
+    <h6>
+      <strong>
+        Vidéo de {{ senderName }}
+      </strong>
+    </h6>
+    <br>
+    <center>
+      <button class="radius float-center" href={{buttonLink}}>Voir la vidéo dans Mobile Practice</button>
+    </center>
+  </columns>
+</row>
